@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #264653;
+    color: #E9C46A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#game-container {
+    background: #2A9D8F;
+    border-radius: 15px;
+    padding: 20px;
+    max-width: 400px;
+    width: 90%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+h1 {
+    font-size: 1.8rem;
+    color: #F4A261;
+}
+
+.button {
+    background: #F4A261;
+    color: #264653;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 10px;
+    transition: transform 0.2s;
+}
+
+.button:hover {
+    transform: scale(1.1);
+}
+
+.input-container {
+    margin: 15px 0;
+}
+
+input {
+    padding: 10px;
+    width: 80%;
+    border-radius: 10px;
+    border: none;
+    font-size: 1rem;
+}
+
+.feedback {
+    font-size: 1.2rem;
+    margin: 15px 0;
+}
+
+.hidden {
+    display: none;
+}
+
+.progress-bar {
+    background: #E76F51;
+    height: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 10px 0;
+}
+
+.progress-fill {
+    background: #F4A261;
+    height: 100%;
+    width: 100%;
+    transition: width 0.5s ease;
+}
+/* Add this new section for the scoreboard */
+#scoreboard {
+    background: #E9C46A;
+    color: #264653;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+    text-align: left;
+    font-size: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#scoreboard h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #F4A261;
+}
