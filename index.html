@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Hidden Digit</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <h1>The Hidden Digit</h1>
+        <div id="scoreboard">
+            <h3>Scoreboard</h3>
+            <p>Games Played: <span id="games-played">0</span></p>
+            <p>Games Won: <span id="games-won">0</span></p>
+            <p>Games Lost: <span id="games-lost">0</span></p>
+        </div>
+        <div id="welcome-screen">
+            <p>Welcome to The Hidden Digit game!</p>
+            <button class="button" onclick="showDifficultyScreen()">Start Game</button>
+        </div>
+
+        <div id="difficulty-screen" class="hidden">
+            <h2>Select Difficulty</h2>
+            <button class="button" onclick="startGame(50, 10)">Easy</button>
+            <button class="button" onclick="startGame(100, 7)">Medium</button>
+            <button class="button" onclick="startGame(200, 5)">Hard</button>
+        </div>
+
+        <div id="gameplay-screen" class="hidden">
+            <h2>Guess the Number!</h2>
+            <div class="progress-bar">
+                <div id="progress-fill" class="progress-fill"></div>
+            </div>
+            <p id="instructions"></p>
+            <div class="input-container">
+                <input type="number" id="guess-input" placeholder="Enter your guess">
+                <button class="button" onclick="submitGuess()">Submit</button>
+            </div>
+            <p id="feedback" class="feedback"></p>
+        </div>
+
+        <div id="end-screen" class="hidden">
+            <h2 id="end-message"></h2>
+            <button class="button" onclick="resetGame()">Play Again</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
