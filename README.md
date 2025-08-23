@@ -1,4 +1,4 @@
-# The Hidden Digit Game
+# The Hidden Digit Game 
 
 **The Hidden Digit Game** is an engaging and interactive game where players must find hidden digits within a grid. This game is designed to be both entertaining and educational, improving the player's pattern recognition and quick decision-making skills.
 
